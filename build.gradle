@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation files('jars/jhpl-0.0.1.jar')
+
+    compile 'guru.nidi:graphviz-java:0.17.1'
+
+    implementation group: 'com.github.vlsi.mxgraph', name: 'jgraphx', version: '4.1.0'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
