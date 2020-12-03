@@ -18,7 +18,7 @@ public class Main  {
     private void buildRepresentations() {
 
         Stream.of(new DescendentRepresentation(), new HasseRepresentation(), new CompleteRepresentation(), new IdealRepresentation()).forEach(it -> {
-            Stream.of(LatticeFactory.random(10), LatticeFactory.booleanAlgebra(3), LatticeFactory.permutationLattice(4))
+            Stream.of(LatticeFactory.random(10), LatticeFactory.booleanAlgebra(4), LatticeFactory.permutationLattice(3))
                     .forEach(la -> {
                         try {
                             it.represent(la)
